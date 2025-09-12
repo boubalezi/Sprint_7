@@ -1,0 +1,1 @@
+{'firstName': 'Brandon', 'lastName': 'Molina', 'address': 'Unit 2079 Box 3668, DPO AA 49525', 'metroStation': '965483', 'phone': '+79571584717', 'rentTime': '942915', 'deliveryDate': '2025-03-15', 'comment': 'I will be back', 'color': ['BLACK']}
