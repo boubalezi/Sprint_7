@@ -1,8 +1,8 @@
-from pages.base_page import BasePage
+from pages.base_api import BaseApi
 from src.data import Urls, UserData, COMMENT
 
 
-class OrderPage(BasePage):
+class OrderApi(BaseApi):
     def __init__(self):
         super().__init__()
         self.order_creation_endpoint = Urls.ORDER_CREATION_ENDPOINT

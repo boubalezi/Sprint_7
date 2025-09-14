@@ -2,7 +2,7 @@ import requests
 from src.data import Urls
 
 
-class BasePage:
+class BaseApi:
     def __init__(self):
         self.base_url = Urls.BASE_URL
         self.session = requests.Session()

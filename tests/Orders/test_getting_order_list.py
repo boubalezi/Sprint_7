@@ -1,13 +1,13 @@
 import pytest
 import allure
-from pages.order_page import OrderPage
+from pages.order_api import OrderApi
 
 
 class TestOrderList:
 
     @allure.title("Проверка получения списка заказов без указания id курьера")
     def test_get_order_list_withot_courier_id(self):
-        order = OrderPage()
+        order = OrderApi()
 
         response = order.get_order_list()
 

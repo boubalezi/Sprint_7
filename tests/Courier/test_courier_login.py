@@ -1,6 +1,6 @@
 import allure
 from src.data import UserData
-from pages.courier_page import CourierPage
+from pages.courier_api import CourierApi
 
 
 class TestCourierLogin:
@@ -8,7 +8,7 @@ class TestCourierLogin:
     @allure.title("Проверка логина курьера с валидными данными")
     def test_courier_login_valid_data(self):
 
-        courier = CourierPage()
+        courier = CourierApi()
         courier_valid_data = {"login": UserData.LOGIN, "password": UserData.PASSWORD}
 
         login_response = courier.login_courier(courier_valid_data)
@@ -19,7 +19,7 @@ class TestCourierLogin:
 
     @allure.title("Проверка логина курьера с пустым логином")
     def test_courier_login_with_empty_login(self):
-        courier = CourierPage()
+        courier = CourierApi()
         courier_data_only_password = UserData.INVALID_COURIER_DATA_NO_LOGIN
 
         login_response = courier.login_courier(courier_data_only_password)
@@ -29,7 +29,7 @@ class TestCourierLogin:
 
     @allure.title("Проверка логина курьера с пустым паролем")
     def test_courier_login_with_empty_password(self):
-        courier = CourierPage()
+        courier = CourierApi()
         courier_data_only_login = UserData.INVALID_COURIER_DATA_NO_PASSWORD
 
         login_response = courier.login_courier(courier_data_only_login)
@@ -39,7 +39,7 @@ class TestCourierLogin:
 
     @allure.title("Проверка логина несуществующего курьера")
     def test_nonexistent_courier_login(self):
-        courier = CourierPage()
+        courier = CourierApi()
         nonexistent_courier_data = {
             "login": UserData.NONEXISTENT_LOGIN,
             "password": "password",

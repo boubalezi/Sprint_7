@@ -1,8 +1,8 @@
-from pages.base_page import BasePage
+from pages.base_api import BaseApi
 from src.data import Urls, UserData
 
 
-class CourierPage(BasePage):
+class CourierApi(BaseApi):
     def __init__(self):
         super().__init__()
         self.courier_creation_endpoint = Urls.COURIER_CREATION_ENDPOINT

@@ -1,6 +1,6 @@
 import pytest
 import allure
-from pages.courier_page import CourierPage
+from pages.courier_api import CourierApi
 
 
 class TestCourierCreation:
@@ -28,7 +28,7 @@ class TestCourierCreation:
 
     @allure.title("Проверка создания курьера с пустым логином")
     def test_create_courier_empty_login(self):
-        courier = CourierPage()
+        courier = CourierApi()
 
         courier_data = courier.generate_courier_data_no_login()
         response = courier.create_courier(courier_data)
@@ -39,7 +39,7 @@ class TestCourierCreation:
 
     @allure.title("Проверка создания курьера с пустым паролем")
     def test_create_courier_empty_password(self):
-        courier = CourierPage()
+        courier = CourierApi()
 
         courier_data = courier.generate_courier_data_no_password()
         response = courier.create_courier(courier_data)

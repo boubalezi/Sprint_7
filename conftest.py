@@ -1,10 +1,10 @@
 import pytest
-from pages.courier_page import CourierPage
+from pages.courier_api import CourierApi
 
 
 @pytest.fixture
 def courier_creation_and_delete_page():
-    page = CourierPage()
+    page = CourierApi()
 
     courier_data = page.generate_courier_data_valid()
     create_response = page.create_courier(courier_data)
@@ -23,7 +23,7 @@ def courier_creation_and_delete_page():
 
 @pytest.fixture
 def delete_courier_data():
-    page = CourierPage()
+    page = CourierApi()
 
     courier_id_holder = {"id": None}
 
