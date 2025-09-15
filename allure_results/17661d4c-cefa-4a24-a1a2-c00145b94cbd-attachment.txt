@@ -1,0 +1,1 @@
+{'firstName': 'Lisa', 'lastName': 'Chapman', 'address': 'PSC 1616, Box 3680, APO AA 29315', 'metroStation': '508677', 'phone': '+73997831825', 'rentTime': '986307', 'deliveryDate': '1994-10-24', 'comment': 'I will be back', 'color': ['']}

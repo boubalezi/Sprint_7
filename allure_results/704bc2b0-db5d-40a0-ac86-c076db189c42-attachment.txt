@@ -1,0 +1,1 @@
+{'firstName': 'Francis', 'lastName': 'Baker', 'address': '3681 Christopher Ramp, Lake Markton, GU 44152', 'metroStation': '184001', 'phone': '+70289227296', 'rentTime': '720406', 'deliveryDate': '1971-05-23', 'comment': 'I will be back', 'color': [['BLACK', 'GREY']]}
